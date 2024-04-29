@@ -1,10 +1,10 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { WelcomeText } from '@/components/special/WelcomeText/welcome.js';
+import * as S from './style.js'
 
 export default function Home() {
   return (
-    <main>
-        Hello word
-    </main>
+    <S.Main>
+        <WelcomeText text={'Hello Word'}/>
+    </S.Main>
   );
 }
